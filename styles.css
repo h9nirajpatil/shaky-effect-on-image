@@ -1,0 +1,28 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.vibrating-image {
+  width: 200px; /* Adjust size as needed */
+  height: auto;
+  animation: vibrate 0.5s 3 alternate;
+}
+
+@keyframes vibrate {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  60% {
+    transform: translateX(-10px);
+  }
+  40%,
+  80% {
+    transform: translateX(10px);
+  }
+}
